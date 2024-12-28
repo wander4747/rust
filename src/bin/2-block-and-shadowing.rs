@@ -7,7 +7,7 @@ fn main() {
 
     z+= 1;
 
-    println!("Valores são: X= {X}, y={y}, z={z}");
+    println!("Values: X= {X}, y={y}, z={z}");
 
     { //internal block
         const X: i32 = 100;
@@ -16,11 +16,10 @@ fn main() {
     
         z+= 1;
 
-        println!("Valores internos são: X= {X}, y={y}, z={z}");
+        println!("Internal Values: X= {X}, y={y}, z={z}");
     }
 
-    println!("Valores depois do bloco interno são: X= {X}, y={y}, z={z}");
-
+    println!("Values ​​after the inner block are: X= {X}, y={y}, z={z}");
 
     let x = 5;
 
@@ -28,17 +27,17 @@ fn main() {
 
     {
         let x = x * 2;
-        println!("O valor interno é: {x}");
+        println!("The internal value is: {x}");
     }
 
-    println!("O valor depois do bloco interno é: {x}");
+    println!("The value after the inner block is: {x}");
 
     let spaces:&str = "   ";
     let spaces: usize = spaces.len();
-    println!("O valor de spaces é: {spaces}");
+    println!("The value of spaces is: {spaces}");
 
 	let mut spaces2 = "   ";
-    println!("O valor de spaces2 é: {spaces2}");
+    println!("The value of spaces2 is: {spaces2}");
 	spaces2 = "qwerty";
-    println!("O valor de spaces2 é: {spaces2}");
+    println!("The value of spaces2 is: {spaces2}");
 }
